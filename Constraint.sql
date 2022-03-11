@@ -1,3 +1,4 @@
+--pk,fk,default,table level constraint
 create table student(
 
 StuId int identity(1,1) primary key,
@@ -5,7 +6,6 @@ StuName varchar(40) not null,
 address varchar(30) not null,
 course varchar (30) DEFAULT 'MBA',
 city varchar(40)
-
 )
 
 Insert into student(StuName,address,city)values('Adam','abc','Delhi')
@@ -43,4 +43,6 @@ select * from PersonTableLevel
 
 insert into PersonTableLevel(id,P_Id,P_Name)values(1,12,'Raj') 
 insert into PersonTableLevel(id,P_Id,P_Name)values(2,13,'Ravi')
-insert into PersonTableLevel(id,P_Id,P_Name)values(3,13,'Rohan')
+insert into PersonTableLevel(id,P_Id,P_Name)values(3,13,'Rani')
+
+
