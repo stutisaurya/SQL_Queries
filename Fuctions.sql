@@ -40,7 +40,17 @@ select * from Employee1 where Emp_Name not like 's%';
 select * from Employee1 where contact like '%12';
 select * from Employee1 where contact not like '%21'
 
+--functions(aggregate)
+select * from students
 
+--AVG
+SELECT AVG(id) AS AvgID FROM Students 
+--COUNT
+select count(name) from students
+--MAX
+select max(id) from students
+--MIN
+select min(id) from students
 
 
 create table students(id int, name varchar(50),branch varchar(50));
